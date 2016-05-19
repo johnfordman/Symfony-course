@@ -10,4 +10,20 @@ namespace HeticBundle\Repository;
  */
 class EtudRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function myFindAllDateOfBirth()
+    {
+//        $repository = $this
+//            ->getDoctrine()
+//            ->getManager()
+//            ->getRepository('HeticBundle:Etud');
+//
+//        $students = $repository->findBy(
+//            array('date_of_birth' => 'desc')
+//        );
+
+//        foreach ($students as $student) {
+//            echo $student->getContent();
+//        }
+
+    }
 }
