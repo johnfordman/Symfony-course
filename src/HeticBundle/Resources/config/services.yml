@@ -1,4 +1,4 @@
 services:
-#    hetic.example:
-#        class: HeticBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+    app.calculate:
+        class: HeticBundle\Services\CalculateAge
+        arguments: ["calculate"]

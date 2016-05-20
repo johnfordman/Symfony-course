@@ -36,9 +36,9 @@ class Etud
     private $lastname;
 
     /**
-     * @var int
+     * @var date
      *
-     * @ORM\Column(name="date_of_birth", type="integer")
+     * @ORM\Column(name="date_of_birth", type="date")
      */
     private $dateOfBirth;
 

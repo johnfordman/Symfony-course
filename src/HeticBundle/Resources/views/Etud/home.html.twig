@@ -7,7 +7,7 @@
 
 
     {% for student in students %}
-        <p>{{student.firstname}}</p>
+        <p>{{student.firstname}}</p> <span>age : {{ age[student.id] }}</span>
     {% endfor %}
 {% endblock %}
 

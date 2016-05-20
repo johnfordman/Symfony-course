@@ -21,8 +21,15 @@ class EtudController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $students = $em->getRepository('HeticBundle:Etud')->findAll();
+
+        $calculate = $this->get('app.calculate');
+        $studentAge = [];
+        foreach($students as $oneStudent){
+            $studentAge[$oneStudent->getId()] = $calculate->calculate($oneStudent->getDateOfBirth());
+        }
         return $this->render('HeticBundle:Etud:home.html.twig', array(
             'students' => $students,
+            'age' => $studentAge
         ));
     }
 
