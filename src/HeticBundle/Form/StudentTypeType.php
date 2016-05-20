@@ -17,6 +17,7 @@ class StudentTypeType extends AbstractType
     {
         $builder
             ->add('name')
+            ->add('created_at',DateType::class,['widget' => 'single_text', 'format' => 'dd-MM-yyyy'])
         ;
     }
     

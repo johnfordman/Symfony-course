@@ -13,6 +13,10 @@
                 <th>Name</th>
                 <td>{{ studentType.name }}</td>
             </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{% if studentType.createdat %}{{ studentType.createdat|date('Y-m-d') }}{% endif %}</td>
+            </tr>
         </tbody>
     </table>
 

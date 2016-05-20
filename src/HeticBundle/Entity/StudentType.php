@@ -62,5 +62,34 @@ class StudentType
     {
         return $this->name;
     }
+
+    /**
+     * @return mixed
+     * @var string
+     * @ORM\Column(name="created_at", type="date")
+     */
+
+    public $created_at;
+
+    /**
+     * @return mixed
+     *
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+
+    /**
+     * @param mixed $created_at
+     * @return $this
+     *
+     */
+    public function setCreatedAt($created_at)
+    {
+        $this->created_at = $created_at;
+
+        return $this;
+    }
 }
 

@@ -8,6 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Created_at</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -16,6 +17,7 @@
             <tr>
                 <td><a href="{{ path('studenttype_show', { 'id': studentType.id }) }}">{{ studentType.id }}</a></td>
                 <td>{{ studentType.name }}</td>
+                <td>{% if studentType.createdat %}{{ studentType.createdat|date('Y-m-d') }}{% endif %}</td>
                 <td>
                     <ul>
                         <li>

@@ -4,11 +4,12 @@
 
 {% block body %}
 <h1>Weeeeeeeeeeeeeeeeeeeee</h1>
+
+
+    {% for student in students %}
+        <p>{{student.firstname}}</p>
+    {% endfor %}
 {% endblock %}
 
 
-{#<ul>#}
-    {#{% for student in students %}#}
-        {#<li>{{ student.content }}</li>#}
-    {#{% endfor %}#}
-{#</ul>#}
+
